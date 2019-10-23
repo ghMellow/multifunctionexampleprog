@@ -6,6 +6,7 @@ public class firstclass {
       System.out.println("1\tfilastrocca completa ");
       System.out.println("2\tnumero di pompieri");
 	  System.out.println("3\tnumero di topi");
+	  System.out.println("4\tinput numero di topi");
       System.out.println("Cosa vuoi fare? -> ");
       selection = Integer.parseInt(System.console().readLine());  // Read user input
       if(selection == 1){
@@ -14,8 +15,10 @@ public class firstclass {
         inputIntFilastrocca();
       }else if(selection == 3){
 		  filastroccaTopi();
+	  }else if(selection == 4){
+		  inputIntFilastroccaTopi();
 	  }
-    }while(selection != 0  selection>3  selection <0);
+    }while(selection != 0  selection>4  selection <0);
 
 
 
@@ -38,4 +41,12 @@ public class firstclass {
 
         int nPompieri = myObj.nextInt();  // Read user input
         System.out.println(nPompieri + "pompieri" + " + 1 pompiere = " + (nPompieri + 1));  // Output user input
+  }
+    public static void inputIntFilastroccaTopi(){
+    Scanner myObj = new Scanner(System.in);
+         // Crea un oggetto Scanner, serve per l'input
+        System.out.print("Inserisci il numero di topi: ");
+
+        int nTopi = myObj.nextInt();  // Read user input
+        System.out.println(nTopi + "topi" + " + 1 topo = " + (nTopi + 1));  // Output user input
   }
