@@ -2,12 +2,13 @@ import java.util.Scanner;
 public class firstclass {
 	public static void main(String[] args){
 		int selection;
-		  do{
+	do{
       System.out.println("1\tfilastrocca completa ");
       System.out.println("2\tnumero di pompieri");
 	  System.out.println("3\tnumero di topi");
 	  System.out.println("4\tinput numero di topi");
 	  System.out.println("5\tla vita di pascoli");
+	  System.out.println("6\tse vuoi uscire premi 6");
       System.out.println("Cosa vuoi fare? -> ");
       selection = Integer.parseInt(System.console().readLine());  // Read user input
       if(selection == 1){
@@ -20,8 +21,11 @@ public class firstclass {
 		  inputIntFilastroccaTopi();
 	  }else if(selection == 5){
 		  pascoli();
-	  }
-    }while(selection != 0  selection>5  selection <0);
+	  }else if(selection == 6){
+		  selection=0;
+		  System.out.println("ciao e grazie per aver usato");
+	  }	  
+    }while(selection != 0 || selection>6 || selection <0);
 
 
 
