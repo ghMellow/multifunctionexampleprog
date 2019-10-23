@@ -18,11 +18,16 @@ public class firstclass {
 
         //print("hello world!");
     }
-  public static void filastrocca(){
+	public static void filastrocca(){
+		for (int i = 1; i<=9; i++){
+			System.out.println(i + (i==1?" pompiere":" pompieri") + " + 1 pompiere = " + (1 + i) + " pompieri");
+		}
+	}
+	  public static void filastrocca(){
         for (int i = 1; i<=9; i++){
-            System.out.println(i + (i==1?" pompiere":" pompieri") + " + 1 pompiere = " + (1 + i) + " pompieri");
+            System.out.println(i + (i==1?" topo":" topi") + " + 1 topo = " + (1 + i) + " pifferaio");
         }
-  }
+	}
   public static void inputIntFilastrocca(){
     Scanner myObj = new Scanner(System.in);
          // Crea un oggetto Scanner, serve per l'input
