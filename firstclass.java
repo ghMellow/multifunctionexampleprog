@@ -7,6 +7,7 @@ public class firstclass {
       System.out.println("2\tnumero di pompieri");
 	  System.out.println("3\tnumero di topi");
 	  System.out.println("4\tinput numero di topi");
+	  System.out.println("5\tla vita di pascoli");
       System.out.println("Cosa vuoi fare? -> ");
       selection = Integer.parseInt(System.console().readLine());  // Read user input
       if(selection == 1){
@@ -17,13 +18,22 @@ public class firstclass {
 		  filastroccaTopi();
 	  }else if(selection == 4){
 		  inputIntFilastroccaTopi();
+	  }else if(selection == 5){
+		  pascoli();
 	  }
-    }while(selection != 0  selection>4  selection <0);
+    }while(selection != 0  selection>5  selection <0);
 
 
 
         //print("hello world!");
     }
+		public static void pascoli(){
+		for (int i = 1; i<=20; i++){
+			System.out.println(i + (i==1?" pascoli":" poeta italiano") + " + 1 pascoli = " + (1 + i) + " poeta italiano");
+		}
+		System.out.println("rip e ciao");
+	}
+	
 	public static void filastrocca(){
 		for (int i = 1; i<=9; i++){
 			System.out.println(i + (i==1?" pompiere":" pompieri") + " + 1 pompiere = " + (1 + i) + " pompieri");
